@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font: normal 10pt arial;
+    color: white;
+}
+
+main {
+    background-color: rgb(31, 25, 25);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    padding: 20px;
+}
+
+/* ----- MENU -------- */
+
+.menu-task {
+   width: 100%; 
+   height: 30px;
+   display: flex;
+   flex-direction: row;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: 50%;
+}
+
+.left p{
+    width: 60px;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btn-add {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 6px;
+    width: 120px;
+    border-radius: 20px;
+}
+
+#btn-filtro {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 6px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+/* ----- TELA -------- */
+
+.ger-task {
+    width: 100%;
+    height: 93%;
+    background-color: rgb(24, 24, 24);
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.fazer, .progresso, .concluido {
+    width: 33.3%;
+    padding: 2px;
+    background-color: rgb(31, 27, 23);
+    border-radius: 20px;
+}
+
+.task-div{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 2px;
+    gap: 5px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.task-div h1 {
+    font-size: 15px;
+}
